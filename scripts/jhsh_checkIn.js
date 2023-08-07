@@ -5,21 +5,6 @@
  * 仓库地址：https://github.com/FoKit/Scripts
  * 更新时间：2023-08-04
 /*
---------------- BoxJS & 重写模块 --------------
-
-https://raw.githubusercontent.com/FoKit/Scripts/main/boxjs/fokit.boxjs.json
-https://raw.githubusercontent.com/FoKit/Scripts/main/rewrite/get_jhsh_cookie.sgmodule
-
------------------- Loon 配置 ------------------
-
-[MITM]
-hostname = yunbusiness.ccb.com
-
-[Script]
-http-request ^https:\/\/yunbusiness\.ccb\.com\/clp_coupon\/txCtrl\?txcode=A3341A040 tag=建行数据, script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,requires-body=1
-
-cron "17 7 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,tag = 建行生活,enable=true
-
 */
 
 const $ = new Env('建行生活');
